@@ -79,3 +79,94 @@ body {
     font-size: 0.95rem;
     font-weight: bold;
 }
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 70%;
+}
+
+.header {
+    height: 20%;
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    background-color: #e2e8f0;
+    gap: 24px;
+    padding: 24px;
+    height: 80%;
+}
+
+.projects {
+    width: 65%;
+}
+
+.p-grid {
+    display: grid;
+    grid-template-columns: repeat(2 , minmax(250px , 1fr));
+    gap: 24px;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: coloumn;
+    justify-content: space-between;
+    gap: 16px;
+    border-left: 2px solid rgb(231, 152, 4);
+}
+
+.card p {
+    font-size: 12px;
+}
+
+p .heading {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+.actions svg {
+    width: 24px;
+    height: 24px;
+    fill:rgb(31, 30, 30);
+}
+
+.widgets {
+    width: 35%;
+}
+
+.widgets {
+    display:flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.announcement {
+    padding: 12px 0;
+}
+
+.announcement:not(:nth-last-child) {
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.trending {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
